@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KabanFactoryBand (KBF) – Эксперимент в мире DeFi</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <img src="images/logopng.png" alt="KabanFactoryBand Logo" class="logo-small">
+      <div class="header-text">
+        <h1>KabanFactoryBand (KBF)</h1>
+        <p>Инновационное тестирование механизмов децентрализованных финансов на Binance Smart Chain</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="section">
+      <h2>О проекте</h2>
+      <p>KabanFactoryBand (KBF) – это уникальный экспериментальный проект, созданный для проведения масштабных тестирований и исследований в области децентрализованных финансов (DeFi). Наш проект нацелен на изучение и апробацию различных смарт-контрактов, протоколов автоматизированного маркет-мейкинга, пулов ликвидности, механизмов стейкинга и займов на базе Binance Smart Chain.</p>
+      <p>В эпоху стремительного развития финансовых технологий KabanFactoryBand стремится стать площадкой для исследований, где каждый участник сможет получить представление о том, как работают новейшие финансовые инструменты и алгоритмы, применяемые в DeFi. Наш проект создан для того, чтобы предоставлять безопасное и прозрачное пространство для экспериментов, не влияющих на основные активы.</p>
+      <p>Мы уделяем особое внимание прозрачности и безопасности всех процессов, а также детальному анализу каждого тестируемого механизма. Наши исследования позволяют выявлять потенциальные уязвимости и оптимизировать работу смарт-контрактов до их официального релиза. Принципы открытости и научного подхода лежат в основе каждого этапа разработки.</p>
+      <h3>Основные цели проекта:</h3>
+      <ul>
+        <li><strong>Глубокое тестирование DeFi-механизмов:</strong> реализация комплексных сценариев для оценки надежности смарт-контрактов и алгоритмов.</li>
+        <li><strong>Инновационные исследования:</strong> проведение экспериментов для выявления и внедрения новых методов оптимизации финансовых протоколов.</li>
+        <li><strong>Образовательная платформа:</strong> предоставление подробной документации, аналитических отчетов и обучающих материалов для разработчиков и пользователей.</li>
+        <li><strong>Прозрачность и безопасность:</strong> постоянное документирование всех этапов работы, открытый доступ к результатам тестирований и оперативное обновление информации, соответствующей стандартам BSCScan.</li>
+      </ul>
+      <p>Наш проект предусматривает создание обширной базы данных с подробным описанием всех протестированных сценариев, технических характеристик и аналитических выводов. Мы сотрудничаем с экспертами в области блокчейна и кибербезопасности для обеспечения максимальной достоверности и качества получаемых данных.</p>
+      <p>KabanFactoryBand (KBF) – это не просто тестовая платформа, это лаборатория будущего финансов, где новейшие разработки и инновации становятся доступными для широкой аудитории.</p>
+    </section>
+
+    <section id="contract" class="section">
+        <h2>Смарт-контракт</h2>
+        <p>Официальный контракт токена KabanFactoryBand (KBF) в сети Binance Smart Chain:</p>
+        <p><strong>Адрес контракта:</strong> 
+          <span id="contract-address">0x379903d4Cbb723E981A0d284eb4a66eF9699Eb77</span>
+          <button class="copy-btn" onclick="copyToClipboard()">Скопировать</button>
+        </p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Контакты</h2>
+      <p>Свяжитесь с нами для обсуждения сотрудничества и предложений.</p>
+      <ul class="contact-list">
+        <li><strong>Email:</strong> <a href="mailto:bitfox79@gmail.com">bitfox79@gmail.com</a></li>
+        <li><strong>X (Twitter) основателя:</strong> <a href="https://x.com/JGrimes98467" target="_blank">X</a></li>
+        <li><strong>Telegram:</strong> <a href="https://t.me/TokenCripta" target="_blank">KabanFactoryBand</a></li>
+      </ul>
+    </section>
+
+    <section id="news" class="section">
+      <h2>Актуальная информация</h2>
+      <p>Все последние новости, обновления и аналитические материалы публикуются на нашем сайте и в официальном Telegram-канале. Подписывайтесь, чтобы всегда быть в курсе последних событий!</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 KabanFactoryBand (KBF). Все права защищены.</p>
+      <a href="images/logoSVG.svg" class="logo-button" download>Логотип</a>
+    </div>
+  </footer>
+
+  <script>
+    function copyToClipboard() {
+        const contractAddress = document.getElementById("contract-address").textContent;
+        navigator.clipboard.writeText(contractAddress).then(() => {
+            alert("Адрес скопирован: " + contractAddress);
+        }).catch(err => {
+            console.error("Ошибка копирования: ", err);
+        });
+    }
+  </script>
+
+</body>
+</html>
