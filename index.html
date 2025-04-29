@@ -39,6 +39,35 @@
       </p>
     </section>
 
+    <!-- Project Roadmap -->
+    <section id="roadmap" class="section">
+      <h2>Project Roadmap</h2>
+      <div class="roadmap-item">
+        <h3>March 2025: Foundation Phase</h3>
+        <ul>
+          <li>Smart contract development and deployment</li>
+          <li>Basic token functionality implementation</li>
+          <li>Initial testing framework setup</li>
+        </ul>
+      </div>
+      <div class="roadmap-item">
+        <h3>April 2025: Core Testing Phase</h3>
+        <ul>
+          <li>Liquidity pool testing with various configurations</li>
+          <li>Advanced tokenomics modeling</li>
+          <li>Initial token distribution analysis</li>
+        </ul>
+      </div>
+      <div class="roadmap-item">
+        <h3>Plan for May 2025: Expansion Phase</h3>
+        <ul>
+          <li>Cross-protocol integration testing</li>
+          <li>Flash loan implementation and stress testing</li>
+          <li>Comprehensive security reviews</li>
+        </ul>
+      </div>
+    </section>
+
     <!-- Team Section -->
     <section id="team" class="section">
       <h2>The Team</h2>
@@ -49,48 +78,80 @@
         Jackson Grimes is an emerging blockchain enthusiast with growing expertise in smart contract development and DeFi applications. Although relatively new, he has gained practical experience in testing and analyzing decentralized financial protocols. His focus is on transparency, security, and continuous improvement of experimental systems.
       </p>
       <p>
-        Founder’s profile on X (Twitter): <a href="https://x.com/JGrimes98467" target="_blank">https://x.com/JGrimes98467</a>
+        Founder's profile on X (Twitter): <a href="https://x.com/JGrimes98467" target="_blank">https://x.com/JGrimes98467</a>
       </p>
     </section>
 
     <!-- Contract Section -->
     <section id="contract" class="section">
-      <h2>Smart Contract</h2>
+      <h2>Smart Contract Details</h2>
       <p>Official token contract for KabanFactoryBand (KBF) on Binance Smart Chain:</p>
       <p><strong>Contract Address:</strong> 
         <span id="contract-address">0x379903d4Cbb723E981A0d284eb4a66eF9699Eb77</span>
         <button class="copy-btn" onclick="copyToClipboard()">Copy</button>
       </p>
-      <p>
-        For full details on token functionalities, please refer to the information available on BSCScan.
-      </p>
+      <h3>Technical Specifications:</h3>
+      <ul>
+        <li><strong>Blockchain:</strong> Binance Smart Chain (BEP-20)</li>
+        <li><strong>Compiler Version:</strong> Solidity 0.8.20</li>
+        <li><strong>Optimization Enabled:</strong> Yes with 200 runs</li>
+        <li><strong>License:</strong> MIT</li>
+        <li><strong>Contract Verified:</strong> Yes, fully verified on BSCScan with all functions and events documented</li>
+      </ul>
     </section>
 
     <!-- Token Functions Section -->
     <section id="token-functions" class="section">
-      <h2>Token Functions & Whitepaper Summary</h2>
+      <h2>Token Functions & Technical Features</h2>
       <p>
-        The KabanFactoryBand (KBF) token is built on the ERC20 standard with several key features:
+        The KabanFactoryBand (KBF) token implements advanced ERC20 functionality with these technical features:
       </p>
       <ul>
-        <li><strong>Burnable:</strong> Allows token holders to reduce the total supply by burning tokens.</li>
-        <li><strong>Pausable:</strong> Authorized accounts can pause transfers during emergencies.</li>
-        <li><strong>Access Control:</strong> Role-based permissions (MINTER, PAUSER) secure minting and critical functions.</li>
-        <li><strong>Flash Minting:</strong> Supports flash loans with zero fee by default, enabling temporary liquidity for testing purposes.</li>
-        <li><strong>Permit Functionality:</strong> Implements ERC2612 permits, allowing approvals via off-chain signatures.</li>
+        <li><strong>Burnable:</strong> Implements ERC20Burnable with public burn functions and event tracking</li>
+        <li><strong>Pausable:</strong> Emergency stop mechanism with role-based access control</li>
+        <li><strong>Access Control:</strong> Role-based permissions (DEFAULT_ADMIN_ROLE, MINTER_ROLE, PAUSER_ROLE)</li>
+        <li><strong>Flash Minting:</strong> Supports ERC3156 flash loans with configurable fees (currently set to 0%)</li>
+        <li><strong>Permit Functionality:</strong> Implements EIP-2612 permits for gasless approvals</li>
       </ul>
-      <p>
-        <em>Whitepaper Summary:</em> KabanFactoryBand aims to serve as an experimental framework for testing DeFi protocols on BSC. Comprehensive technical details, analytical reports, and our approach to evaluating liquidity, staking, and flash loan mechanisms are outlined in our whitepaper.
-      </p>
+    </section>
+
+    <!-- Token Metrics -->
+    <section id="metrics" class="section">
+      <h2>Token Metrics</h2>
+      <ul>
+        <li><strong>Total Initial Supply:</strong> 100,000,000 KBF</li>
+        <li><strong>Decimals:</strong> 18</li>
+        <li><strong>Max Supply:</strong> Unlimited (with controlled minting via MINTER_ROLE)</li>
+        <li><strong>Deflationary Mechanism:</strong> Voluntary token burning supported</li>
+      </ul>
+    </section>
+
+    <!-- Security Section -->
+    <section id="security" class="section">
+      <h2>Security Information</h2>
+      <p>The KabanFactoryBand smart contract has been fully verified on BSCScan. Verification includes:</p>
+      <ul>
+        <li>Complete source code verification matching deployed bytecode</li>
+        <li>ABI documentation for all contract functions</li>
+        <li>Event logging for all significant contract actions</li>
+        <li>Transparent contract interactions visible on blockchain explorers</li>
+      </ul>
+      <p>Users can directly interact with the verified contract through the BSCScan interface.</p>
     </section>
 
     <!-- Whitepaper Section -->
     <section id="whitepaper" class="section">
-      <h2>Whitepaper</h2>
+      <h2>Technical Documentation</h2>
       <p>
-        Download our comprehensive whitepaper for detailed technical and analytical information on KabanFactoryBand token functions and project methodology.
+        Our comprehensive documentation details the technical architecture and research methodology:
       </p>
-      <a href="whitepaper.pdf" class="download-btn" download>Download Whitepaper (PDF)</a>
+      <ul>
+        <li>Complete smart contract technical reference</li>
+        <li>Testing framework specifications</li>
+        <li>Protocol interaction case studies</li>
+        <li>Tokenomics analysis</li>
+      </ul>
+      <a href="whitepaper.pdf" class="download-btn" download>Download Documentation (PDF)</a>
     </section>
 
     <!-- Contact Section -->
@@ -107,16 +168,22 @@
     <!-- News Section -->
     <section id="news" class="section">
       <h2>Latest Updates</h2>
-      <p>
-        All the latest news, updates, and analytical reports are published on our website and official Telegram channel. Stay tuned for continuous updates!
-      </p>
+      <div class="update">
+        <h3>March 2025</h3>
+        <p>Smart contract successfully deployed to Binance Smart Chain mainnet.</p>
+      </div>
+      <div class="update">
+        <h3>April 2025</h3>
+        <p>Initial testing phase completed with positive results.</p>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
       <p>&copy; 2025 KabanFactoryBand (KBF). All rights reserved.</p>
-      <a href="images/logoSVG.svg" class="logo-button" download>Logo</a>
+      <p><strong>Disclaimer:</strong> KabanFactoryBand is an experimental project for research purposes only.</p>
+      <a href="images/logoSVG.svg" class="logo-button" download>Download Logo</a>
     </div>
   </footer>
 
